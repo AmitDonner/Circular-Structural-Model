@@ -3,7 +3,7 @@ The following includes all the MATLAB code used in my Master's Thesis for implem
 
 ## List of files
 
-1. GetMoments - Computes the moment estimators $\bar{X}_{n}_$ and $\bar{Y}_n$  = \frac{1}{n}\sum_{i=1}^{n}Y_i$ and $\widehat{\Sigma}$ the empirical covariance matrix of the pair $(X,Y)$.
+1. GetMoments - Computes the sample average of $X$ and $Y$, and $\widehat{\Sigma}$ the empirical covariance matrix of the pair $(X,Y)$.
 2. UniformityTest - Function that apply the uniformity test and returns the $\chi^2(2)$ statistic and the corresponding p-values of the test.
 3. CircleMLE_Uniform - Maximum likelihood estimation under uniformity of the observations across the circle.
 4. FindMu - Estimating the 2 possible values of \$mu$ - the mean direction of the Von-Mises distribution using the spectal decomposotion of $\widehat\Sigma$.
