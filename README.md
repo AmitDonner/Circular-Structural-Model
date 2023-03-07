@@ -9,4 +9,4 @@ The following includes all the MATLAB code used in my Master's Thesis for implem
 4. FindMu - Estimating the 2 possible values of \$mu$ - the mean direction of the Von-Mises distribution using the spectal decomposotion of $\widehat\Sigma$.
 5. bisection1 - Computing $\varkappa_L$, the lower bound of $\hat\varkappa$ using the bisection method.
 6. get_mu_bounds1 - Lower and upper bounds for the 2 possible values of $\mu$.
-7. VM_negLogLike3 - Function that computes the negative log-likelihood function of the sample ${(x_i,y_i)$, $i=1,\dots,n}$.
+7. VM_negLogLike3 - Function that computes the negative log-likelihood function of the sample $(x_i,y_i)$, $i=1,\dots,n$.
