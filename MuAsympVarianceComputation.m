@@ -53,34 +53,3 @@ VarTheta = simplify(simplify(expand(simplify(expand(VarTheta),...
 VarDenom = (-2 * rho^2 * (R2 - R1^2))^2;
 % \sigma_\mu^2 computation
 VarMu = simplify(VarTheta/VarDenom, 'IgnoreAnalyticConstraints', true, 'Steps', 80);
-
-latex(VarMu)
-
-VarMu1 = ((1-R1^2)*(sigma^2/rho^2 -0.5*(1-R2)) - (1-R2)^2*(0.75*R2/R1^2 - 1)+ sigma^4/rho^4)...
-    /((R1^2-R2)^2);
-
-VarMuFun = symfun(VarMu, [sigma rho kappa]);
-VarMuFun1 = symfun(VarMu1, [sigma rho kappa]);
-
-% VarThetaFun = symfun(VarTheta, [sigma rho kappa mu]);
-rho=50;
-kappa=20;
-n=10000;
-sigma=2;
-double(VarMuFun(sigma, rho, kappa))
-double(VarMuFun1(sigma, rho, kappa))
-
-n*var(res)
-
-
-%% Plotting the Variance
-R1 = @(kappa) besseli(1, kappa)./besseli(0, kappa);
-R2 = @(kappa) besseli(2, kappa)./besseli(0, kappa);
-
-VarMu = @(kappa, tau) ((1-R1(kappa).^2).*(tau.^2 -0.5.*(1-R2(kappa))) - ...
-    (1-R2(kappa)).^2.*(0.75.*R2(kappa)./R1(kappa).^2 - 1)+ tau.^4)...
-    ./((R1(kappa).^2-R2(kappa)).^2);
-
-tau = 0.01;
-
-fplot(@(kappa) VarMu(kappa, tau) , [5, 500])
