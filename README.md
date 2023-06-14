@@ -25,4 +25,5 @@ There is no need to use functions 1-7 seperately.
 * [sol, P_val, stat] = CircleMLE(x,y) - sol is the vector of estimated parameters, and *P_val* and *stat* are the uniformity test P-value and $\chi^2$ statistic respectively.
 
 
+For any issue - feel free to contact me at *adonner@campus.haifa.ac.il*
 
