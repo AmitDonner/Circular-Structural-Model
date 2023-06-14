@@ -17,3 +17,12 @@ Scripts 1-8 need to be downloaded to your working directory. Then, apply the fun
 CircleMLE returns a vector of length 6, with the following order - kappa, mu, rho, a, b, sigma. This function is a wrapper which uses function 1-7 in order to estimate the vector of parameters. 
 
 There is no need to use functions 1-7 seperately. 
+
+### Examples
+
+* sol=CircleMLE(x,y) - Returns a vector of length 6, with the estimated parameters, ordered by kappa, mu, rho, a, b, sigma.
+* [sol, P_val] = CircleMLE(x,y) - *sol* is the vector of estimated parameters and *P_val* is the P-value of the uniformity test.
+* [sol, P_val, stat] = CircleMLE(x,y) - sol is the vector of estimated parameters, and *P_val* and *stat* are the uniformity test P-value and $\chi^2$ statistic respectively.
+
+
+
