@@ -1,5 +1,5 @@
 # Circular Structural Model
-The following includes all the MATLAB code used in my Master's Thesis for implementing maximum likelihood estimation of the circular structural model with the Von-Mises distribution 
+The listed below files contains all the code needed for implementing the ML estimation of circles from noisy data, as described in the attached paper 
 
 ## List of files
 
@@ -11,4 +11,3 @@ The following includes all the MATLAB code used in my Master's Thesis for implem
 6. get_mu_bounds1 - Lower and upper bounds for the 2 possible values of $\mu$.
 7. VM_negLogLike3 - Function that computes the negative log-likelihood function of the sample $(x_i,y_i)$, $i=1,\dots,n$.
 8. CircleMLE - Wrapper of functions 1-7 that given a sample $(x_i,y_i)$, $i=1,\dots,n$ return an estimates of the circle parameters along with the nuisance paramteres.
-9. MuAsympVarianceComputation - Symbolic computation of asymptotic variance of the mean direction estimator.
