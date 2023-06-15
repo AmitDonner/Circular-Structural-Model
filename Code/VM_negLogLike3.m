@@ -5,7 +5,7 @@ mu = par(2);
 rho = par(3); 
 a = par(4); 
 b = par(5); 
-sigma= par(6);
+sigma = par(6);
 % x - the x sample
 % y - the y sample
 %% D = sqrt(A^2+B^2)
